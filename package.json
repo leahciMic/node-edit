@@ -1,0 +1,23 @@
+{
+  "name": "node-edit",
+  "version": "0.0.0",
+  "description": "Launch $EDITOR with a default set of text and allow the user to make changes. Strip out the comments and fire a callback with the new text, or false if the text has not changed.",
+  "main": "edit.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leahciMic/node-edit"
+  },
+  "keywords": [
+    "Editor",
+    "Edit",
+    "Vim"
+  ],
+  "author": "Michael Leaney <leahcimic@gmail.com>",
+  "license": "BSD"
+}
