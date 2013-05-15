@@ -1,5 +1,5 @@
 /**
- * edit
+ * node-edit
  *
  * Launch $EDITOR with a default set of text and allow the user to make changes.
  * Strips out comments and fires the callback with the changed text, or false if
