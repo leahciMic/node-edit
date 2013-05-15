@@ -11,7 +11,7 @@
 
 var cp = require('child_process'),
     fs = require('fs'),
-    editor = process.env.EDITOR || 'vi',
+    editor = process.env.EDITOR || 'vim',
     TMP_FILE = '.EDITOR';
 
 var Edit = function() {
@@ -37,13 +37,13 @@ Edit.writeTempFile = function(data, callback) {
  */
 Edit.spawnEditor = function(callback) {
   var p = cp.spawn(
-    'vi',
+    editor,
     [TMP_FILE],
     {
       stdio: 'inherit'
     }
   );
-  p.on('close', function(code) {
+  p.on('exit', function(code) {
     fs.readFile(
       TMP_FILE,
       'utf8',
